@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.body{
+    font-family: 'monteserrat';
+}
+.nav{
+    background-image: linear-gradient(navy, blue, navy);
+    color: snow;
+    height: 80px;
+    width: 100%;
+}
+.nav  a{
+background-color: navy, blue, navy;
+border: greenyellow 1px solid;
+color: snow;
+font-size: 17px;
+text-transform: uppercase;
+padding: 7px, 13x;
+border-radius: 8px;
+transition: all;
+}
+.logo{
+    background-color:  navy, blue, navy;
+    border: greenyellow 1px solid;
+    border-radius: 8px;
+    padding: 3px;
+    color: snow;
+    font-size: 35px;
+    line-height: 80px;
+    margin: 0 100px;
+    font-weight: bold;
+}
+.nav ul{
+    float: right;
+    margin-right: 20px;
+}
+.nav li{
+display: inline-block;
+line-height: 80px;
+margin-right: 20px;
+}
+.nav a:hover{
+    background-image: linear-gradient(pink, navy);
+    transition: 2s;
+}
+
+@media(max-width:700px){
+    .logo{
+ margin-left: 30.9% ;
+}
+    .nav ul{
+float: none;
+    }
+    .nav{
+    background-image: linear-gradient(navy, blue, navy);
+    color: snow;
+    height:fit-content;
+    width: 100%;
+}
+.nav li{
+display: inline;
+line-height: 80px;
+margin-right: 20px;
+text-align: center;
+}
+.nav ul{
+margin-left: 0.9em;
+}
+ }
+
+/* WELCOME SECTION */
+.welcome{
+width: 100%;
+height: 100%;
+position: relative;
+text-align: center;
+}
+
+.welcome img{
+   width: 255px;
+   height: 200px;
+   border-radius: 6px;
+   margin-top: 0.5em;
+}
+
+.welcome-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.head{
+   text-align: center;
+   color: lavender;
+   margin-top: 1em;
+   margin-bottom: 0.2em;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slogan{
+   text-align: center;
+   font-size: 30px;
+   font-weight: 900;
+   font-style: oblique;
+   color: aqua
+}
+
+.call{
+    color: navy;
+    font-weight: bold;
+}
+
+/*FOOD MENU STARTS HERE*/
+.container{
+    max-width: 1500px;    
+    margin: 0;
+    padding: 1.5em;
+}
+
+.menu{
+    font-family: 'Gill Sans';
+    font-size: 14px;
+}
+
+.menu-group-heading{
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgb(116, 168, 37);
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.menu-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+    border: goldenrod 1px solid;
+}
+
+.menu-item{
+    display: flex;
+}
+
+.menu-item-image{
+    width: 125px;
+    height: 125px;
+    flex-shrink: 0;
+    object-fit: 0;
+    margin-right: 1.5em;
+    border-radius: 9px;
+    margin-left: 0.5em;
+}
+
+.menu-item-text{
+flex-grow: 1px;
+}
+
+.menu-item-heading{
+display: flex;
+justify-content: space-between;
+margin: 0 1.5em 1.5em 0;
+color: black;
+}
+
+.menu-item-name{
+margin-right: 1.5em;
+}
+
+.menu-item-description{
+    line-height: 1.6;
+}
+
+@media (min-width: 720px){
+.menu{
+    font-size: 16px;
+}
+
+.menu-group{
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-item-image{
+    width: 128px;
+    height: 125px;
+    flex-shrink: 0;
+    object-fit: 0;
+    margin-right: 1.5em;
+}
+}
+
+/* footer section */
+.footer{
+background-image: linear-gradient(goldenrod, green);
+    height: 100px;
+    text-align: center;
+    padding-top: 1em;
+    border-radius:2px;
+    color: snow;
+}
+
+.fa-square-facebook{
+    color: blue;
+    font-size: 30px;
+    margin-right: 0.2em;
+}
+
+.fa-youtube{
+    color: red;
+    font-size: 30px;
+    margin-left: 0.2em;
+}
+
+.fa-tiktok{
+    color: snow;
+    font-size: 30px;
+    margin-left: 0.2em;
+}
+
+.fa-x-twitter{
+    color: snow;
+    font-size: 30px;
+}
+
+.fa-youtube:hover{
+    color: darkred;
+}
+
+.fa-square-facebook:hover{
+    color: rgb(2, 2, 175);
+}
+
+.fa-tiktok:hover{
+    color: rgb(196, 193, 193);
+}
+
+.fa-x-twitter:hover{
+    color: wheat;
+}
+/* ABOUT SECTION */
+
+.about{
+   text-align: center;
+}
+.heading{
+   background-image: linear-gradient(navy, pink);
+   width: 100% auto;
+   height:fit-content;
+   padding: 30px;
+   border: greenyellow 1px solid;
+}
+
+.inline-color{
+    color: goldenrod;
+}
+h1{
+    color:snow;
+  
+}
+
+/* contact page */
+
+
+.about-us{
+    display: flex;
+    margin: 1em 0 0;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    flex-direction: row;
+}
+
+.content-item{
+    background-image: linear-gradient(#423EA3, #377274);
+    color: snow;
+    width: 500px ;
+    height: 240px;
+    padding: 40px 0 0 0;
+    border-radius: 10px;
+    border: greenyellow 1px solid;
+}
+.description{
+    font-size: 17px;
+    font-family: sans-serif monospace;
+    color: #961ED2;
+}
+#enail{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: larger;
+}
+#footer{
+    background-color: burlywood;
+    height: 90px;
+    margin-top: 6em;
+    text-align: center;
+    border-radius:px;
+    color: snow;
+    padding: 1em 0;
+}
+@media(max-width: 768px) and (max-width: 991.98px){
+      .about-us{
+    display: flex;
+    margin: 1em 0 0;
+    padding: 0 60px;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.content-item{
+    background-image: linear-gradient(#423EA3, #377274);
+    border: red 1px solid;
+    color: snow;
+    width: 400px;
+    height: 700%;
+    margin: 0.5em;
+    border-radius: 5px;
+    padding: 15px;
+    /* margin-left: 70px; */
+    border: greenyellow 1px solid;
+  }
+}
+
+@media (max-width: 575.98px) {
+   .about-us{
+    display: flex;
+    margin: 1em 0 0;
+    padding: 0 40px;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.content-item{
+    background-image: linear-gradient(#423EA3, #377274);
+    border: red 1px solid;
+    color: snow;
+    width: 400px;
+    height: 700%;
+    margin: 0.5em;
+    border-radius: 5px;
+    padding: 15px;
+    /* margin-left: 70px; */
+    border: greenyellow 1px solid;
+}
+}
